@@ -1,0 +1,39 @@
+.cards{
+    background: rgb(235 233 233);
+}
+.cards > div{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card-container{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid black;
+    background: white;
+}
+.card-container:hover{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.card-container > img{
+    width: 300px;
+    height: 150px;
+}
+.card-about{
+    width: 90%;
+    margin: 0 auto;
+}
+.card-about > h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.card-about > p{
+    font-size: 12px;
+}
