@@ -18,7 +18,7 @@ const Header = () => {
           <ul className="page-list">
             <li>Home</li>
             <li>About</li>
-            <li>My Courses</li>
+            <li id="My_Courses">My Courses</li>
             <li>Pages</li>
             <li>Blog</li>
           </ul>
