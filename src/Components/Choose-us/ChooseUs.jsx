@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import chooseImg from "../../assets/why-choose-us.png";
 import "./ChooseUs.css";
 import ReactPlayer from "react-player";
-import icon1 from "../../assets/draft-first-icon.webp";
-import icon2 from "../../assets/support-discuss.png";
-import icon3 from "../../assets/certification.png";
 
 const FeatureData = [
   {
@@ -61,7 +58,7 @@ const ChooseUs = () => {
           {!showVideo && (
             <span className="play__icon">
               <i
-                class="ri-play-circle-line"
+                className="ri-play-circle-line"
                 onClick={() => setShowVideo(!showVideo)}
               ></i>
             </span>
@@ -74,7 +71,7 @@ const ChooseUs = () => {
           <div key={index}>
             <div className="single__feature">
               <div className="single-feature-image">
-                <i class={item.icon}></i>
+                <i className={item.icon}></i>
               </div>
               <h4>{item.title}</h4>
               <p>{item.desc}</p>

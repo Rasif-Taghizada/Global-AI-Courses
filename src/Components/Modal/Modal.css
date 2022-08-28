@@ -1,0 +1,64 @@
+.modalBackground {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(200, 200, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContainer {
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.modal-title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.modal-body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:  column;
+    gap: 50px;
+}
+.modal-body > p{
+    width: 100%;
+    height: 60px;
+}
+.titleCloseBtn {
+    padding: 6px 24px;
+}
+.modal-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.modal-footer > button{
+    font-size: 18px;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.modal-footer > button:hover{
+    background-color: blue;
+}

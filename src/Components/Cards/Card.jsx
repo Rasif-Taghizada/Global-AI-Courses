@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Card.css";
 import image from "../../assets/artificial-intelligence-big-data.jpg";
+import Modal from "../Modal/Modal";
 
 const Card = ({ props }) => {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className="cards">
       <h1>All Courses</h1>
@@ -11,16 +14,28 @@ const Card = ({ props }) => {
           <div className="card-container" key={i}>
             <img src={image} alt="" />
             <div className="card-about">
-              <h1 className="card-title">{data.title.rendered}</h1>
+              <h1 className="card-title">
+                {data.title.rendered.length >= 30
+                  ? data.title.rendered.slice(0, 30).concat("...")
+                  : data.title.rendered}
+              </h1>
               <p>
-                Discover the fascinating new opportunities opened up by modern
-                digital and AI
+                {data.slug
+                  ? data.slug
+                  : "Discover Python, one of the most powerful programming languages."}
               </p>
-              <button>Get course</button>
+              <button
+                onClick={() => {
+                  setOpenModal(true);
+                }}
+              >
+                Get course
+              </button>
             </div>
           </div>
         ))}
-      </div>  
+      </div>
+      {openModal && <Modal closeModal={setOpenModal} />}
     </div>
   );
 };

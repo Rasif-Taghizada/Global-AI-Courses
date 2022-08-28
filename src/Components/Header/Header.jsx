@@ -24,7 +24,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="user-login">
-          <p>Log in </p>
+          <p><a href="#">Log in</a></p>
           <button>Join now</button>
         </div>
       </div>
